@@ -1,11 +1,3 @@
-python_Time-consuming
-=====================
-
-utils for common test
-
-Example
-========
-```python
 #coding:utf-8
 from test import TC
 
@@ -34,6 +26,4 @@ class T(TC):
 print
 with T() as t:
     task()
-```
-
 
