@@ -7,7 +7,7 @@ Example
 ========
 ```python
 #coding:utf-8
-from test import TC
+from tc import TC
 
 
 def task():
@@ -34,6 +34,14 @@ class T(TC):
 print
 with T() as t:
     task()
+```
+
+output:
+```shell
+Time-consuming: 3.000021 ms
+
+another test:
+Time-consuming: 3.000021 ms
 ```
 
 
