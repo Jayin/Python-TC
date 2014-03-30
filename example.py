@@ -1,5 +1,5 @@
 #coding:utf-8
-from test import TC
+from tc import TC
 
 
 def task():
