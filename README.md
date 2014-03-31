@@ -44,4 +44,20 @@ another test:
 Time-consuming: 3.000021 ms
 ```
 
+use decorator
+===
+make it more sexy:
+```python
 
+@Test
+def work():
+    for x in range(1,200000,2):
+        pass
+
+work()
+```
+
+output:
+```shell
+Time-consuming: 3.999949 ms
+```

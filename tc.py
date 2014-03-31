@@ -3,8 +3,9 @@ __author__ = 'Jayin Ton'
 
 import time
 
+
 class TC(object):
-    def __init__(self,verbose = True):
+    def __init__(self, verbose=True):
         self.verbose = verbose
 
     def __enter__(self):
@@ -17,4 +18,13 @@ class TC(object):
         self.msecs = self.secs * 1000  # millisecs
         if self.verbose:
             print 'Time-consuming: %f ms' % self.msecs
+
+def Test(func):
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        func(*args, **kwargs)
+        secs = time.time() - start
+        print  'Time-consuming: %f ms' % (secs * 1000)
+    return wrapper
+
 

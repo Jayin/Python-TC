@@ -1,5 +1,5 @@
 #coding:utf-8
-from tc import TC
+from tc import TC,Test
 
 
 def task():
@@ -26,4 +26,14 @@ class T(TC):
 print
 with T() as t:
     task()
+
+print
+
+@Test
+def work():
+    for x in range(1,200000,2):
+        pass
+
+work()
+
 
