@@ -1,4 +1,4 @@
-python_Time-consuming
+Python-TC
 =====================
 
 utils for common test
